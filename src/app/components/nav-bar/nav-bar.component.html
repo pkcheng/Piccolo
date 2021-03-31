@@ -1,0 +1,37 @@
+<nav class="navbar navbar-dark sticky-top navbar-expand-lg">
+  <div class="container-fluid" style="width: 60%">
+    <a class="navbar-brand" href="."
+      ><img src="assets/logo.png" style="height: 50px" />&nbsp;&nbsp;<span
+        style="color: white; font-family: Montserrat"
+        >Recipe Engine</span
+      ></a
+    >
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0"></ul>
+      <form class="form-inline" (submit)="handleSubmit($event)">
+        <input
+          value="{{ keywords }}"
+          class="form-control mr-sm-2"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+          (input)="setKeywords($event)"
+        />
+        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">
+          Search
+        </button>
+      </form>
+    </div>
+  </div>
+</nav>

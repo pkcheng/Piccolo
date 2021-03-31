@@ -1,0 +1,27 @@
+<div class="card h-100">
+  <img
+    src="{{ result.recipe.image }}"
+    class="card-img-top"
+    alt="Responsive image"
+    style="
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      width: auto;
+      height: 265px;
+    "
+  />
+  <div class="card-body">
+    <h5 class="card-title">{{ result.recipe.label }}</h5>
+    <h6 class="card-subtitle mb-2 text-muted">
+      <strong>Calories: </strong>{{ calories }}
+    </h6>
+  </div>
+  <div
+    class="card-footer"
+    style="background-color: white; border-radius: 15px; border-top: 0px"
+  >
+    <a target="_blank" class="btn btn-info" href="{{ result.recipe.url }}"
+      >Learn More</a
+    >
+  </div>
+</div>
